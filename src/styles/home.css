@@ -1,0 +1,15 @@
+h1{
+    position: absolute;
+    font-size: 48px;
+    font-weight: 500;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    color: white;
+    white-space: nowrap;
+    font-style: normal;
+    flex-wrap: wrap;
+}
+.gallery{
+    width: 100%;
+}
