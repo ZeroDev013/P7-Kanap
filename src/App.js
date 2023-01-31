@@ -1,14 +1,18 @@
 import AppRoutes from './AppRoutes';
 //composant pages
 import Header from "./components/Header";
-import "./styles/App.css";
+import Footer from "./components/Footer";
 
-//Créer la structure de la page
+//styles
+import "./styles/app.css";
+
+//Créer la structure de la page en important les routes de AppRoutes
 function App() {
   return (
     <>
       <Header />
       <main><AppRoutes /></main>
+      <Footer />
     </>
   );
 }

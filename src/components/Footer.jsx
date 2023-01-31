@@ -1,14 +1,13 @@
 import '../styles/footer.css';
 import LOGO from "../assets/images/LOGO.svg";
 
-function Footer({children}) {
+function Footer() {
     return (
         <div className="footer">
-            {children}
             <img src={LOGO} alt="Logo" className="footer__img" />
-            <h2>© 2020 Kasa. All rights reserved</h2>
+            <h3>© 2020 Kasa. All rights reserved</h3>
         </div>
-        
+
     );
 }
 

@@ -1,12 +1,19 @@
 import '../styles/card.css';
+import { Link } from 'react-router-dom';
 
-function Card(propsCard) {
+function Card({data}) {
+
+    //récupère seulement les elements à affiché du logement
+    const {id, title, cover} = data;
+
     return (
-        <div className = "card">
-            <img className= "card_cover" src={propsCard.img} alt="cover" /> 
-            <p> {propsCard.title} </p>
+        <div className="card">
+            <Link to={id}>
+                <img className="card_cover" src={cover} alt="cover" />
+            </Link>
+            <h2> {title} </h2>
         </div>
     )
 }
- 
-export default Card
+
+export default Card;
