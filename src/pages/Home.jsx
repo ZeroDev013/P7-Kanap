@@ -14,14 +14,14 @@ import '../styles/home.css';
 function Home() {
 
   return (
-    <div className='body'>
+    <>
       <Banner>
         <h1><span>Chez vous, &nbsp;</span><span> partout et ailleurs</span></h1>
       </Banner>
       <Gallery>
         {logements.map((logement) => <Card key = {logement.id} data = {logement} />)}
       </Gallery>
-    </div>
+    </>
   );
 }
 

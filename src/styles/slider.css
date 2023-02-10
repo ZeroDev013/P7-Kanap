@@ -1,0 +1,44 @@
+
+h5,h6{
+    color:#FF6060;
+}
+.container{
+    display: flex;
+}
+.container__left {
+    width: 80%;
+}
+.container__right {
+    width: 10%;
+}
+.stars{
+    display: flex;
+}
+.host{
+    display: flex;
+    width: 50%;
+    border-radius: 30px;
+}
+img.host__image {
+    border-radius: 50%;
+    width: 70%;
+}
+.stars{
+    width: 30%;
+}
+
+img.images__logementCover {
+    height: 450px;
+    border-radius: 25px;
+}
+
+  
+  
+  
+ 
+  
+ 
+  
+  
+  
+  

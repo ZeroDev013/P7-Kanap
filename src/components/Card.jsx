@@ -1,14 +1,14 @@
 import '../styles/card.css';
 import { Link } from 'react-router-dom';
 
-function Card({data}) {
+function Card({ data }) {
 
     //récupère seulement les elements à affiché du logement
-    const {id, title, cover} = data;
+    const { id, title, cover } = data;
 
     return (
         <div className="card">
-            <Link to={id}>
+            <Link to={"/logements/" + id}>
                 <img className="card_cover" src={cover} alt="cover" />
             </Link>
             <h2> {title} </h2>
