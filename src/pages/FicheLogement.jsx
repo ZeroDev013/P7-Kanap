@@ -26,7 +26,7 @@ function FicheLogement() {
         <div className="container__right">
           <Host dataHost={data} />
           <div className="stars">
-            <Stars dataStar={data} />
+            <Stars rating={data.rating} maxScore = "5" />
           </div>
         </div>
       </div>

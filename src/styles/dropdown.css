@@ -17,7 +17,7 @@
     width: 48%;
 }
 .dropdowncontent{
-    width: 85%;
+    width: 100%;
     background-color: #f6f6f6;
     line-height: 34px;
     font-weight: 400;
@@ -26,7 +26,7 @@
 }
 .dropdownContainer_close{
     height: 47px;
-    width: 85%;
+    width: 100%;
     border-radius: 5px;
     background: #FF6060;
     display: flex;

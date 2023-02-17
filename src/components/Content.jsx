@@ -13,9 +13,9 @@ function Content({ dataContent }) {
         <h2 className="location__text"> {location} </h2>
       </div>
       <div className="buttons">
-        <button><p className='tags'>{tags[0]}</p></button>
-        <button><p className='tags'>{tags[1]}</p></button>
-        <button><p className='tags'>{tags[2]}</p></button>
+        {
+          tags.map(tags => <button><p className='tags'>{tags}</p></button>)
+        }
       </div>
     </div>
   );

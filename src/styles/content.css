@@ -47,8 +47,7 @@ button {
 
 .buttons {
     display: flex;
-    justify-content: space-between;
-    width: 38%;
+    gap: 15px;
 }
 
 p.tags{
