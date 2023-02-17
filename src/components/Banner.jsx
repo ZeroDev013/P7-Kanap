@@ -1,10 +1,10 @@
-import BANNER from "../assets/images/IMG.jpg";
+import banner from "../assets/images/banner.jpg";
 import "../styles/banner.css";
 
 function Banner({children}) {
     return (
         <div className="banner">
-            <img src={BANNER} alt="banner" className="banner" />{children}
+            <img src={banner} alt="banner" className="banner" />{children}
         </div>
     );
 }

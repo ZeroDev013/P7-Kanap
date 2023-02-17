@@ -60,7 +60,7 @@ img.vector{
     align-items: flex-end;
     width: 5%;
 }
-p{
+p.content{
     color: #FF6060;
     font-weight: 500;
     margin: 30px;

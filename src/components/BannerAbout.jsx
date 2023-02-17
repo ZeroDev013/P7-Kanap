@@ -1,10 +1,10 @@
-import BANNERABOUT from "../assets/images/IMG1.jpg";
+import bannerAbout from "../assets/images/bannerAbout.jpg";
 import "../styles/bannerAbout.css";
 
 function BannerAbout({children}) {
     return (
         <div className="bannerAbout">
-            <img src={BANNERABOUT} alt="bannerAbout" className="bannerAbout" />{children}
+            <img src={bannerAbout} alt="bannerAbout" className="bannerAbout" />{children}
         </div>
     );
 }

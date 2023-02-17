@@ -1,30 +1,3 @@
-/* import React from "react";
-import '../styles/slider.css';
-import logements from '../logements.json';
-
-
-function Slider() {
-
-    return (
-
-        <div className="fichesLogements">
-
-            {logements.map((logement) => (
-
-                <div className="imageSlider" key={logement.id}>
-                    <div className="images">
-                        <img src={logement.cover} alt="logement cover" className="images__logementCover" />
-                    </div>
-                </div>
-            ))}
-        </div>
-        
-    );
-}
-console.log(logements);
-export default Slider; */
-
-
 import React, { useState } from 'react';
 import logements from '../logements.json';
 import Arrows from './Arrows';

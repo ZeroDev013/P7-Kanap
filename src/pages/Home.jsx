@@ -7,7 +7,7 @@ import Card from '../components/Card';
 import logements from '../logements.json';
 
 //import css body
-import '../styles/home.css';
+import '../styles/body.css';
 
 //Affiche le texte
 //Affiche l'image et le titre du logement
@@ -19,12 +19,12 @@ function Home() {
         <h1><span>Chez vous, &nbsp;</span><span> partout et ailleurs</span></h1>
       </Banner>
       <Gallery>
-        {logements.map((logement) => <Card key = {logement.id} data = {logement} />)}
+        {logements.map((logement) => <Card key = {logement.id} dataCard = {logement} />)}
       </Gallery>
     </>
   );
 }
-
+console.log(Card);
 export default Home;
 
 

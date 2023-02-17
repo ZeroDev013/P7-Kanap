@@ -1,0 +1,20 @@
+.hostProfile {
+    display: flex;
+    align-items: center;
+}
+
+.host_picture {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 64px;
+    height: 64px;
+}
+
+p.host_name {
+    color: #FF6060;
+    font-weight: 500;
+    font-size: 18px;
+    max-width: min-content;
+    margin-right: 20px;
+
+}

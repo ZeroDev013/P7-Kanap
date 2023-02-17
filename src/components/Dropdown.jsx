@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import VECTOR from "../assets/images/Vector.svg";
+import vector from "../assets/images/vector.svg";
 
 import "../styles/dropdown.css";
 
@@ -20,13 +20,13 @@ function Dropdown({ title, content }) {
             <div className='dropdownContainer_close'>
                 <div className='title'>
                     <h3>{title}</h3>
-                </div>
+                </div>         
                 <div className={open ? 'vector open' : 'vector  closed'}>
-                    <img src={VECTOR} alt="vector" className="vector" />
+                    <img src={vector} alt="vector" className="vector" />
                 </div>
             </div>
             <div className={open ? 'dropdowncontent open' : 'dropdowncontent  closed'}>
-                <p>{content}</p>
+                <p className='content'>{content}</p>
             </div>
         </div>
     )

@@ -1,10 +1,10 @@
 import '../styles/card.css';
 import { Link } from 'react-router-dom';
 
-function Card({ data }) {
+function Card({ dataCard }) {
 
-    //récupère seulement les elements à affiché du logement
-    const { id, title, cover } = data;
+    //récupère seulement les elements à afficher du logement
+    const { id, title, cover } = dataCard;
 
     return (
         <div className="card">

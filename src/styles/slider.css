@@ -32,6 +32,16 @@ img.images__logementCover {
     border-radius: 25px;
 }
 
+section.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    align-content: center;
+}
+.slide.active {
+    width: 100%;
+}
   
   
   
