@@ -4,17 +4,17 @@ import Dropdown from "../components/Dropdown";
 import logements from '../logements.json';
 import Host from "../components/Host";
 import Stars from "../components/Stars";
+import Content from "../components/Content";
 import { useParams } from "react-router-dom";
 import '../styles/content.css';
-import Content from "../components/Content";
+
 
 function FicheLogement() {
 
-  const logement = logements;
   //récupère l'id de l'url
   const { id } = useParams();
   //recherche et compare 
-  const data = logement.find(logement => logement.id === id)
+  const data = logements.find(logement => logement.id === id)
 
   return (
     <>
@@ -30,9 +30,15 @@ function FicheLogement() {
           </div>
         </div>
       </div>
-      <div className="dropdown">
-        <Dropdown>
-        </Dropdown>
+      <div className="dropdown__container">
+        <div className="dropdown__left">
+          <Dropdown key={data.description} title={"Description"} content={data.description} />
+        </div>
+        <div className="dropdown__right">
+          <div>
+            <Dropdown key={data.equipements} title={"Equipements"} content={data.equipments} />
+          </div>
+        </div>
       </div>
     </>
   );

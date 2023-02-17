@@ -1,3 +1,4 @@
+
 .container {
     display: flex;
     flex-direction: row;
@@ -50,10 +51,7 @@ button {
     width: 38%;
 }
 
-.stars {
-    width: 100%;
-}
-
 p.tags{
     size: 14px;
+    line-height: 10px;
 }
