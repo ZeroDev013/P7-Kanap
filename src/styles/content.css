@@ -1,4 +1,3 @@
-
 .container {
     display: flex;
     flex-direction: row;
@@ -6,18 +5,19 @@
 }
 
 .container__right {
-    width: 14%;
+    width: 15%;
 }
 
 .container__left {
-    width: 90%;
+    width: 85%;
 }
+
 .title__text {
     color: #FF6060;
     font-weight: 500;
     display: contents;
-    line-height: 51px;
-    font-size: 36px;
+    font-size: 24px;
+    white-space: normal;
 }
 
 .location__text {
@@ -34,7 +34,6 @@
 }
 
 button {
-    width: 115px;
     height: 25px;
     background-color: #FF6060;
     border-radius: 10px;
@@ -50,7 +49,38 @@ button {
     gap: 15px;
 }
 
-p.tags{
+p.tags {
     size: 14px;
     line-height: 10px;
+}
+
+@media (max-width: 991px) {
+
+    .container {
+        display: block;
+    }
+
+    .container__right {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    @media (max-width: 991px){
+    
+       /*  h1{
+           font-size: 24px;
+        } */
+    
+    }
+
+}
+
+@media (max-width: 375px) {
+    p.tags {
+        size: 12px;
+
+    }
+
+    
 }

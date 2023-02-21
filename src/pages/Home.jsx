@@ -24,7 +24,7 @@ function Home() {
     </>
   );
 }
-console.log(Card);
+
 export default Home;
 
 

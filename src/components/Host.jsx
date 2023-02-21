@@ -7,7 +7,7 @@ function Host({ dataHost }) {
             <div className="hostProfile">
                 <p className="host_name">{dataHost.host.name}</p>
                 <div className="host_picture">
-                    <img src={dataHost.host.picture} alt="pictureProfil" />
+                    <img src={dataHost.host.picture} alt="pictureProfil" className='host__img' />
                 </div>
             </div>
         </>

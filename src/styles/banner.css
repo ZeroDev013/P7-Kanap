@@ -1,3 +1,6 @@
+h1{
+    font-size: 24px;
+}
 .banner{
     position: relative;
     display: flex;
@@ -9,6 +12,7 @@
 
 .banner img{
     object-fit: cover;
+    width: 100%;
 }
 .banner::before{
     position: absolute;
@@ -20,4 +24,18 @@
     z-index: 1;
 }
 
+@media (max-width: 991px){
+    
+    .banner{
+        height: 160px;
+    }
 
+}
+
+@media (max-width: 375px){
+    
+    .banner{
+        height: 111px;
+    }
+
+}

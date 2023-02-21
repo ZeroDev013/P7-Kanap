@@ -7,9 +7,11 @@ function About() {
     <>
       <BannerAbout>
       </BannerAbout>
+      <div className='dropDownGlobal'>
       {AboutData.map((data, about) => {
         return <Dropdown key={about} title={data.title} content={data.content} />
       })}
+      </div>
     </>
   );
 }

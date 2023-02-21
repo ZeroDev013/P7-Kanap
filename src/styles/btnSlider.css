@@ -1,0 +1,7 @@
+button.btn-slide.prev {
+    position: absolute;
+    z-index: 1;
+    top: 300px;
+    background-color: transparent;
+    
+}

@@ -7,6 +7,7 @@ import Stars from "../components/Stars";
 import Content from "../components/Content";
 import { useParams } from "react-router-dom";
 import '../styles/content.css';
+import BtnSlider from "../components/BtnSlider";
 
 
 function FicheLogement() {
@@ -18,7 +19,8 @@ function FicheLogement() {
 
   return (
     <>
-      <Slider slides={logements} />
+    <BtnSlider/>
+      <Slider  dataSlider={data} /> 
       <div className="container">
         <div className="container__left">
           <Content dataContent={data} />
@@ -26,16 +28,16 @@ function FicheLogement() {
         <div className="container__right">
           <Host dataHost={data} />
           <div className="stars">
-            <Stars rating={data.rating} maxScore = "5" />
+            <Stars rating={data.rating} maxScore="5" />
           </div>
         </div>
       </div>
-      <div className="dropdown__container">
-        <div className="dropdown__left">
-          <Dropdown key={data.description} title={"Description"} content={data.description} />
-        </div>
-        <div className="dropdown__right">
-          <div>
+      <div className="dropdown__fiche">
+        <div className="dropdown__container">
+          <div className="dropdown__left">
+            <Dropdown key={data.description} title={"Description"} content={data.description} />
+          </div>
+          <div className="dropdown__right">
             <Dropdown key={data.equipements} title={"Equipements"} content={data.equipments} />
           </div>
         </div>

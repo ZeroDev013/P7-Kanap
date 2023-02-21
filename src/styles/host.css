@@ -4,18 +4,15 @@
     justify-content: flex-end;
 }
 
-.host_picture {
-    border-radius: 50%;
-    overflow: hidden;
-    width: 64px;
-    height: 64px;
-}
-
 p.host_name {
     color: #FF6060;
     font-weight: 500;
     font-size: 18px;
     max-width: min-content;
-    margin-right: 20px;
-
+    margin-right: 5px;
+}
+img.host__img {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
 }
