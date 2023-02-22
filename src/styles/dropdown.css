@@ -63,7 +63,9 @@ img.vector {
 .dropdowncontent.closed {
     display: none;
 }
-
+p.description{
+    display: none;
+}
 .dropdowncontent.open {
     display: block;
 }
@@ -83,20 +85,30 @@ img.vector {
     width: 5%;
 }
 
-p.content {
+p.description {
     color: #FF6060;
     font-weight: 500;
     margin: 30px;
     display: flex;
     font-size: 18px;
 }
+p.equipements {
+    color: #FF6060;
+    font-weight: 500;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+li{
+   list-style-type: none; 
+}
 
 @media (max-width: 970px) {
 
     .dropdown__container {
         display: flex;
-        flex-direction: column;
-        
+        flex-direction: column;    
     }
 
     .dropdown__left {

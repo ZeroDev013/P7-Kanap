@@ -6,6 +6,7 @@
 img.card_cover {
     border-radius: 25px;
     object-fit: cover;
+    opacity: 0.8;
 }
 
 .card_overlay {
@@ -23,6 +24,18 @@ img.card_cover {
     margin-left: 2%;
     margin-top: 2%;
     margin-bottom: 2%;
+    background: linear-gradient(transparent, rgb(0 0 0 / 91%));
+    border-radius: 25px;
+}
+
+.banner::before {
+    position: absolute;
+    inset: 0;
+    content: "";
+    mix-blend-mode: darken;
+    background: black;
+    opacity: 0.3;
+    z-index: 1;
 }
 
 

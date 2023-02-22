@@ -8,9 +8,11 @@ function Card({ dataCard }) {
 
     return (
         <div className="card">
+            
             <Link to={"/logements/" + id}>             
                 <img className="card_cover" src={cover} alt="cover" />
             </Link>
+            
             <h2> {title} </h2>
         </div>
     )

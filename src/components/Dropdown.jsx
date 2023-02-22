@@ -21,13 +21,22 @@ function Dropdown({ title, content, equipements }) {
                 <div className='title'>
                     <h3>{title}</h3>
                     <h3>{equipements}</h3>
-                </div>         
+                </div>
                 <div className={open ? 'vector open' : 'vector  closed'}>
                     <img src={vector} alt="vector" className="vector" />
                 </div>
             </div>
             <div className={open ? 'dropdowncontent open' : 'dropdowncontent  closed'}>
-                <p className='content'>{content}</p>
+                <p className='description'>
+                  {content}  
+                </p>
+                
+                {/* <p className='equipements'>
+                        <li>{content[0]}</li>
+                        <li>{content[1]}</li>
+                        <li>{content[2]}</li>
+                        <li>{content[3]}</li>
+                    </p> */}
             </div>
         </div>
     )

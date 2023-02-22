@@ -113,6 +113,8 @@ function Slider({ dataSlider }) {
 
   //tableau d index
   const { pictures } = dataSlider;
+  
+
 
   return (
     
