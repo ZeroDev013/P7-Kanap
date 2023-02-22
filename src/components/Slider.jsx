@@ -102,33 +102,51 @@ import './Slider.css' */
       )
 }   */
 
-
+import '../styles/arrows.css'
 import '../styles/slider.css'
 import '../styles/btnSlider.css'
-
+import { useState } from 'react'
+import arrowLeft from "../assets/images/arrowLeft.svg";
+import arrowRight from "../assets/images/arrowRight.svg";
 
 function Slider({ dataSlider }) {
 
- 
-
-  //tableau d index
   const { pictures } = dataSlider;
-  
+  const [current, setCurrent] = useState(0);
 
-
+  const nextSlide = () => {
+    setCurrent(current === pictures.lenght - 1 ? 0 : current + 1)
+  };
+  const prevSlide = () => {
+    setCurrent(current - 1)
+  };
+console.log(current);
   return (
-    
-    <div className="slider">
-        {
-          pictures.map(pictures =>
-            <div className='container__picture'>         
-              <img src={pictures} alt="pictures" className="picture" />                 
-            </div>)
-        }   
-          
-      </div> 
-      
+
+    <div className="sliders">
+      <div className='container__picture'>
+        {pictures.map((pictures, index) =>
+          <div
+            key={index}
+            className={
+              index === current
+                ? "slider slide_picture-active"
+                : "slider"
+            }
+          >
+            <img src={pictures} alt="pictures" className="picture" />
+          </div>)
+        }
+        <span className="prev" onClick={prevSlide}>
+          <img src={arrowLeft} alt="arrow" className="arrow-left" />
+        </span>
+        <span className="next" onClick={nextSlide}>
+          <img src={arrowRight} alt="arrow" className="arrow-right" />
+        </span>
+      </div>
+    </div>
   )
+
 }
 
 export default Slider;

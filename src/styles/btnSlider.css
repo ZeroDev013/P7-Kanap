@@ -5,3 +5,12 @@ button.btn-slide.prev {
     background-color: transparent;
     
 }
+
+button.btn-slide.next {
+    position: absolute;
+    z-index: 1;
+    top: 300px;
+    background-color: transparent;
+    transform: rotate(180deg);
+    
+}

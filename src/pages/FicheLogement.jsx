@@ -7,7 +7,8 @@ import Stars from "../components/Stars";
 import Content from "../components/Content";
 import { useParams } from "react-router-dom";
 import '../styles/content.css';
-import BtnSlider from "../components/BtnSlider";
+/* import BtnSlider from "../components/BtnSlider"; */
+
 
 
 function FicheLogement() {
@@ -19,7 +20,8 @@ function FicheLogement() {
 
   return (
     <>
-    <BtnSlider/>
+    
+    
       <Slider  dataSlider={data} /> 
       <div className="container">
         <div className="container__left">

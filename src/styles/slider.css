@@ -1,9 +1,18 @@
-.slider {
-    width: 100%;
-    /* max-width: 1280px; */
-    height: 410px;
+.sliders{
     position: relative;
 }
+
+.slider {
+    width: 100%;
+    height: 82px;
+    opacity: 0;
+    
+}
+.slide_picture-active{
+    opacity:1;
+    
+}
+
 .container__pictures {
     width: 100%;
     max-width: 1280px;
