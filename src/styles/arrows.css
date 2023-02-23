@@ -10,20 +10,19 @@
     align-items: center;
     right: 15px;
 }
-/* .leftArrow {
-    position: absolute;
-    top: 50%;
-
+img.arrows{
+      width: 100%;  
+        
 }
 
-img.image__arrows {
-    width: 100%;
-    height: inherit;
-} */
-@media (max-width: 375px){
-    
-    img.image__arrows {
+@media (max-width: 991px){  
+
+    img.arrows{
         width: 24px;
-        height: 24px;
+        
     }
+    .next,.prev {
+        top: 180px;
+    }
+
 }

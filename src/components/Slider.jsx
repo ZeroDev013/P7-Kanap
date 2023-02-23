@@ -10,18 +10,16 @@ function Slider({ dataSlider }) {
   const [current, setCurrent] = useState(0);
 
   const nextSlide = () => {
-    setCurrent(current === pictures.lenght - 1 ? 0 : current + 1)
+    setCurrent(current ===  pictures.length - 1 ? 0 : current + 1)
   };
   const prevSlide = () => {
-    setCurrent(current === 0 ? pictures.lenght - 1 : current - 1)
+    setCurrent(current === 0 ? pictures.length - 1 : current - 1)
   };
-
-  console.log(current);
-
+console.log(current);
   return (
 
     <div className="sliders">
-      <div className='container__picture'>
+      <div className="container__picture">
         {pictures.map((pictures, index) =>
           <div
             key={index}
@@ -36,33 +34,30 @@ function Slider({ dataSlider }) {
         }
 
         <span className="prev" onClick={prevSlide}>
-          <img src={arrowLeft} alt="arrowLeft" />
+          <img src={arrowLeft} alt="arrowLeft" className='arrows' />
         </span>
         <span className="next" onClick={nextSlide}>
-          <img src={arrowRight} alt="arrowRight" />
+          <img src={arrowRight} alt="arrowRight" className='arrows' />
         </span>
 
-        <div className='pagination'>
+        <div className="pagination">
           {pictures.map((_, index) => {
             return (
-          <div
-            key={index}
-            className={index === current
-              ? "pagination_number pagination_number-active"
-              : "pagination_number"
-            }
-
-          >
-            <p className='number'>{current}/{index}</p>
-          </div>
-          )      
+              <div
+                key={index}
+                className={index === current
+                  ? "pagination_number pagination_number-active"
+                  : "pagination_number"
+                }
+              >
+                <p className="number">{current}/{pictures.length - 1}</p> 
+              </div>
+            )
           })}
-          
         </div>
       </div>
     </div>
   )
-
 }
 
 export default Slider;

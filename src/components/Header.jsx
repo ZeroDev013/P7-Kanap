@@ -9,10 +9,12 @@ function Header() {
         <img src={LOGO} alt="Logo" className="header__img" />
       </Link>
       <nav className="header__nav">       
-          <NavLink to="/" style ={({isActive})=>{return {textDecoration:isActive?"underline":""}}} className="header__links__style">
+          <NavLink to="/" style ={({isActive})=>{
+            return {textDecoration:isActive?"underline":""}}} className="header__links__style">
             Acceuil
           </NavLink>
-          <NavLink to="/About" style ={({isActive})=>{return {textDecoration:isActive?"underline":""}}} className="header__links__style">
+          <NavLink to="/About" style ={({isActive})=>{
+            return {textDecoration:isActive?"underline":""}}} className="header__links__style">
             A Propos
           </NavLink>        
       </nav>

@@ -22,7 +22,8 @@ function Dropdown({ title, content, equipements }) {
                     <h3>{title}</h3>
                     <h3>{equipements}</h3>
                 </div>
-                <div className={open ? 'vector open' : 'vector  closed'}>
+                <div className={open 
+                    ? 'vector open' : 'vector  closed'}>
                     <img src={vector} alt="vector" className="vector" />
                 </div>
             </div>
