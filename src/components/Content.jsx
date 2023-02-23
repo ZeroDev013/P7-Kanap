@@ -18,11 +18,11 @@ function Content({ dataContent }) {
       </div>
       <div className="buttons">
         {
-          tags.map(tags =>
+          tags.map((tags) =>
             <button>
-              <p className='tags'>
+              <li key={tags}>
                 {tags}
-              </p>
+              </li>
             </button>)
         }
       </div>
