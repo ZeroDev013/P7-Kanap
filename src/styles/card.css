@@ -4,9 +4,9 @@
 }
 
 .card_cover {
-    border-radius: 25px;
+    border-radius: 15px;
     object-fit: cover;
-    opacity: 0.8;
+    
 }
 
 .card {
@@ -15,10 +15,21 @@
     margin-left: 2%;
     margin-top: 2%;
     margin-bottom: 2%;
-    background: linear-gradient(360deg, black, transparent);
-    border-radius: 25px;
+    border-radius: 15px;
 }
-
+.card__overlay {
+    background: linear-gradient(360deg, black, transparent);
+    z-index: 1;
+    position: absolute;
+    height: 340px;
+    opacity: 0.5;
+    width: 27%;
+    border-radius: 15px;
+}
+.card__container {
+    position: relative;
+    height: 340px;
+}
 .banner::before {
     position: absolute;
     inset: 0;
@@ -35,14 +46,21 @@
     .card {
         width: 90%;
         margin-bottom: 0;
+        height: 255px;
     }
+    
 }
 
 @media (max-width: 991px) {
 
     .card {
-        width: 46%;
+        
         margin-bottom: 0;
+    }
+    .card__overlay {
+        
+        width: 27%;
+        
     }
 }
 
@@ -54,6 +72,15 @@
         margin-left: 0;
         margin-right: 0;
         margin-bottom: 0;
+    }
+    .card__overlay {
+        
+        width: 90%;
+        height: 255px;
+        
+    }
+    .card__container{
+        height: 255px;
     }
 
 }

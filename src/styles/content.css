@@ -71,10 +71,19 @@ p.tags {
         justify-content: space-between;
         align-items: center;
     }
+
 }
+
+@media (max-width: 578px) {
+    .buttons__text {
+        font-size: 11px;
+    }
+}
+
 
 @media (max-width: 375px) {
     p.tags {
         size: 12px;
     }
+
 }

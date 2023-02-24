@@ -14,17 +14,21 @@
     line-height: 34px;
     font-weight: 400;
     font-size: 24px;
+    
+    
 
 }
 
 .dropdown__container {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .dropdown__left {
     width: 48%;
     margin-top: 0;
+    
 }
 
 .dropdown__right {
@@ -40,13 +44,14 @@
     align-items: center;
     padding: 20px;
     margin: 0;
-
 }
 
 .vector {
     width: 14px;
     height: 24px;
-
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .vector.open {
@@ -60,6 +65,7 @@
 
 .dropdown.closed {
     display: none;
+    
 }
 
 .dropdown.open {
@@ -73,13 +79,6 @@
 
 .title {
     width: 100%;
-}
-
-.vector {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    width: 5%;
 }
 
 .content {

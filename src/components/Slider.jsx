@@ -18,8 +18,9 @@ function Slider({ dataSlider }) {
 
   return (
 
-    <div className="sliders">
+    <div className="sliders">  
       <div className="container__picture">
+      <div className='overlay'></div>
         {pictures.map((pictures, index) =>
           <div
             key={index}

@@ -1,6 +1,6 @@
-import '../styles/stars.css';
 import star from "../assets/images/star.svg";
 import starBlack from "../assets/images/starblack.svg";
+import '../styles/stars.css';
 
 function Stars(props) { 
 

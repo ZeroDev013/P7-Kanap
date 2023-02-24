@@ -1,5 +1,5 @@
-import '../styles/card.css';
 import { Link } from 'react-router-dom';
+import '../styles/card.css';
 
 function Card({ dataCard }) {
 
@@ -7,13 +7,17 @@ function Card({ dataCard }) {
     const { id, title, cover } = dataCard;
 
     return (
+        
         <div className="card">
+            <Link to={"/logements/" + id}>
+                
+            <div className='card__overlay'></div>
             
-            <Link to={"/logements/" + id}>             
-                <img className="card_cover" src={cover} alt="cover" />
             </Link>
-            
-            <h2> {title} </h2>
+            <div className='card__container'>
+                <img className="card_cover" src={cover} alt="cover" />
+                <h2> {title} </h2>
+            </div>
         </div>
     )
 }

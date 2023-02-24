@@ -19,7 +19,8 @@ function Content({ dataContent }) {
       <div className="buttons">
         {
           tags.map((tags, index) =>
-            <button key={index}>
+            <button className="buttons__text"
+              key={index}>
               {tags}
             </button>)
         }
