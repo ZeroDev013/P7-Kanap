@@ -9,22 +9,13 @@ img.card_cover {
     opacity: 0.8;
 }
 
-.card_overlay {
-    background: linear-gradient(transparent, rgba(0, 0, 0, .5));
-    border-radius: inherit;
-    height: 100%;
-    position: relative;
-    top: 0;
-    width: 100%;
-}
-
 .card {
     width: 30%;
     margin: 1%;
     margin-left: 2%;
     margin-top: 2%;
     margin-bottom: 2%;
-    background: linear-gradient(transparent, rgb(0 0 0 / 91%));
+    background: linear-gradient(360deg, black, transparent);
     border-radius: 25px;
 }
 

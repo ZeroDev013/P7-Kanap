@@ -18,11 +18,9 @@ function Content({ dataContent }) {
       </div>
       <div className="buttons">
         {
-          tags.map((tags) =>
-            <button>
-              <li key={tags}>
-                {tags}
-              </li>
+          tags.map((tags, index) =>
+            <button key={index}>
+              {tags}
             </button>)
         }
       </div>

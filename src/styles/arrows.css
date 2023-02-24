@@ -10,9 +10,8 @@
     align-items: center;
     right: 15px;
 }
-img.arrows{
-      width: 100%;  
-        
+.arrows{
+      width: 100%;         
 }
 
 @media (max-width: 991px){  
