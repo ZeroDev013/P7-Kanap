@@ -78,35 +78,19 @@
     position: absolute;
 }
 
+@media (max-width: 991px) {
 
-
-
-/* @media (max-width: 991px) {
-
-    .slider {
+    .sliders {
         height: 335px;
     }
+    .pagination{
+        top: 215px;
+    }
+}
 
-} */
-/* @media (max-width: 969px) {
+@media (max-width: 969px) {
 
-    .slider {
+    .sliders {
         height: 273px;
     }
-
 }
-
-@media (max-width: 702px) {
-
-    .slider {
-        height: 244px;
-    }
-
-}
-@media (max-width: 425px) {
-
-    .slider {
-        height: 226px;
-    }
-
-} */

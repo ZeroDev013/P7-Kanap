@@ -4,24 +4,28 @@
     align-items: center;
     left: 15px;
 }
+
 .next {
     position: absolute;
     top: 150px;
     align-items: center;
     right: 15px;
 }
-.arrows{
-      width: 100%;         
+
+.arrows {
+    width: 100%;
 }
 
-@media (max-width: 991px){  
+@media (max-width: 991px) {
 
-    img.arrows{
+    img.arrows {
         width: 24px;
-        
+
     }
-    .next,.prev {
-        top: 180px;
+
+    .next,
+    .prev {
+        top: 110px;
     }
 
 }

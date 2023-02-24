@@ -3,7 +3,7 @@
     height: 100%;
 }
 
-img.card_cover {
+.card_cover {
     border-radius: 25px;
     object-fit: cover;
     opacity: 0.8;
@@ -36,7 +36,6 @@ img.card_cover {
         width: 90%;
         margin-bottom: 0;
     }
-
 }
 
 @media (max-width: 991px) {
@@ -45,15 +44,12 @@ img.card_cover {
         width: 46%;
         margin-bottom: 0;
     }
-
 }
 
 @media (max-width: 614px) {
 
     .card {
         width: 100%;
-        /* margin-bottom: 0; */
-        /* margin: 3%; */
         margin-top: 25px;
         margin-left: 0;
         margin-right: 0;

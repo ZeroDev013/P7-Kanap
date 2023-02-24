@@ -1,18 +1,12 @@
-.stars{
+.stars {
     display: flex;
     height: inherit;
     align-items: center;
-    justify-content: flex-end;
-    /*  width: 100%; */
 }
 
-@media (max-width: 1150px){
-  
-    
-    .stars {
-        display: flex;
-        /* width: 20%; */
-        /* height: inherit; */
-        align-items: center;
+@media (max-width: 991px) {
+
+    img.imageStars {
+        width: 24px;
     }
 }

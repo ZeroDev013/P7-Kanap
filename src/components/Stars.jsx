@@ -9,13 +9,12 @@ function Stars(props) {
 
     for (let i = 1; i <= maxScore; i++) {
         if (i <= rating)
-            stars.push(<img key={i} className='stars' src={star} alt="stars" />)
+            stars.push(<img key={i} className='imageStars' src={star} alt="stars" />)
         else
-            stars.push(<img key={i} className='stars' src={starBlack} alt="stars" />)
+            stars.push(<img key={i} className='imageStars' src={starBlack} alt="stars" />)
     }
     return (
-        <>  
-        
+        <>   
             {stars}
         </>
     );

@@ -4,14 +4,14 @@
     justify-content: flex-end;
 }
 
-p.host_name {
+.host_name {
     color: #FF6060;
     font-weight: 500;
     font-size: 18px;
     max-width: min-content;
     margin-right: 5px;
 }
-img.host__img {
+.host__img {
     border-radius: 50%;
     width: 64px;
     height: 64px;

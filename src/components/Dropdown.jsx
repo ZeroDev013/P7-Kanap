@@ -27,10 +27,10 @@ function Dropdown({ title, equipements, content ,children }) {
                 </div>
             </div>
             <div className={open ? 'dropdown open' : 'dropdown  closed'}>
-                <p className='content'>
+                <ul className='content'>
                     {children}
                     {content}
-                </p>
+                </ul>
             </div>
         </div>
     )

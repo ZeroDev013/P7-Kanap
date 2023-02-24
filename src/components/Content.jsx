@@ -5,7 +5,7 @@ function Content({ dataContent }) {
   const { title, location, tags } = dataContent;
 
   return (
-    <div className="container__left">
+    <div className="locations">
       <div className="title">
         <h1 className="title__text">
           {title}

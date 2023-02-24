@@ -1,20 +1,19 @@
-h1{
-    font-size: 24px;
-}
-.banner{
+.banner {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 25px;
     overflow: hidden;
+    height: 223px;
 }
 
-.banner img{
+.banner img {
     object-fit: cover;
     width: 100%;
 }
-.banner::before{
+
+.banner::before {
     position: absolute;
     inset: 0;
     content: "";
@@ -24,17 +23,9 @@ h1{
     z-index: 1;
 }
 
-@media (max-width: 991px){
-    
-    .banner{
-        height: 160px;
-    }
+@media (max-width: 375px) {
 
-}
-
-@media (max-width: 375px){
-    
-    .banner{
+    .banner {
         height: 111px;
     }
 

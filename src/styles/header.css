@@ -21,7 +21,7 @@
   padding: 10px;
 }
 
-img.navbar__img {
+.navbar__img {
   height: 68px;
   width: 210px;
   left: 0px;
@@ -29,11 +29,19 @@ img.navbar__img {
   border-radius: 0px;
 }
 
-img.header__img {
+.header__img {
   width: 80%;
 }
 
 @media (max-width: 991px) {
+
+  .header__links__style {
+    font-size: 20px;
+    padding: 5px;
+  }
+
+}
+@media (max-width: 578px) {
 
   .header__links__style {
     font-size: 12px;
@@ -42,10 +50,11 @@ img.header__img {
 
 }
 
-@media (max-width: 375px) {
+@media (max-width: 385px) {
 
   .header {
     margin: 20px;
+    padding: 0px;
   }
 
   .header__nav {
@@ -56,5 +65,5 @@ img.header__img {
   a {
     width: 50%;
   }
-  
+
 }

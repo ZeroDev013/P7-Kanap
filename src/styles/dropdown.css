@@ -1,6 +1,6 @@
 .dropDownGlobal {
     width: 80%;
-    margin: 57px 10% 124px 10%;
+    margin: 57px 10% 114px 10%;
 }
 
 .dropdown {
@@ -43,7 +43,7 @@
 
 }
 
-img.vector {
+.vector {
     width: 14px;
     height: 24px;
 
@@ -87,8 +87,10 @@ img.vector {
     font-weight: 500;
     margin: 10px 30px 30px 30px;
     display: flex;
+    flex-direction: column;
     font-size: 18px;
 }
+
 .equipements {
     color: #FF6060;
     font-weight: 500;
@@ -97,20 +99,22 @@ img.vector {
     flex-direction: column;
     font-size: 18px;
 }
-ul{
+
+ul {
     margin: 0;
     padding: 0;
 }
-li{
-   list-style-type: none;
-   line-height: 1.9;
+
+li {
+    list-style-type: none;
+    line-height: 1.9;
 }
 
 @media (max-width: 970px) {
 
     .dropdown__container {
         display: flex;
-        flex-direction: column;    
+        flex-direction: column;
     }
 
     .dropdown__left {
