@@ -4,7 +4,8 @@ import "../styles/bannerAbout.css";
 function BannerAbout({children}) {
     return (
         <div className="bannerAbout">
-            <img src={bannerAbout} alt="bannerAbout" className="bannerAbout" />{children}
+            <img src={bannerAbout} alt="bannerAbout" className="bannerAbout" />
+            {children}
         </div>
     );
 }

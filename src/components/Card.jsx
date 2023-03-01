@@ -9,10 +9,8 @@ function Card({ dataCard }) {
     return (
         
         <div className="card">
-            <Link to={"/logements/" + id}>
-                
-            <div className='card__overlay'></div>
-            
+            <Link to={"/logements/" + id}>              
+            <div className='card__overlay'></div>           
             </Link>
             <div className='card__container'>
                 <img className="card_cover" src={cover} alt="cover" />

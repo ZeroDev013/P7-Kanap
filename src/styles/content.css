@@ -1,4 +1,4 @@
-.container {
+.hosting {
     display: flex;
     flex-direction: row;
     margin-top: 25px;
@@ -60,7 +60,7 @@ p.tags {
 
 @media (max-width: 991px) {
 
-    .container {
+    .hosting {
         display: block;
     }
 
@@ -82,7 +82,7 @@ p.tags {
 
 
 @media (max-width: 375px) {
-    p.tags {
+    .tags {
         size: 12px;
     }
 

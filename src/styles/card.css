@@ -46,9 +46,7 @@
     .card {
         width: 90%;
         margin-bottom: 0;
-        height: 255px;
     }
-    
 }
 
 @media (max-width: 991px) {
@@ -76,11 +74,7 @@
     .card__overlay {
         
         width: 90%;
-        height: 255px;
         
-    }
-    .card__container{
-        height: 255px;
     }
 
 }

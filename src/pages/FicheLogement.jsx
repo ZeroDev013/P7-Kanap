@@ -18,18 +18,15 @@ function FicheLogement() {
   return (
     <>
       <Slider dataSlider={data} />
-      <div className="container">
-        
-          <Content dataContent={data} />
-        
+      <div className="hosting">
+        <Content dataContent={data} />
         <div className="host">
           <Host dataHost={data} />
           <div className="stars">
             <Stars rating={data.rating} maxScore="5" />
           </div>
         </div>
-      </div>
-      <div className="dropdown__fiche">
+      </div> 
         <div className="dropdown__container">
           <div className="dropdown__left">
             <Dropdown
@@ -43,16 +40,16 @@ function FicheLogement() {
           <div className="dropdown__right">
             <Dropdown
               key={data.equipements}
-              title={"Equipements"}  >             
-                {data.equipments.map((equipement) =>
-                  <li>
-                    {equipement}
-                  </li>
-                )}        
+              title={"Equipements"}  >
+              {data.equipments.map((equipements) =>
+                <li key = {equipements}>
+                  {equipements}
+                </li>
+              )}
             </Dropdown>
           </div>
         </div>
-      </div>
+      
     </>
   );
 

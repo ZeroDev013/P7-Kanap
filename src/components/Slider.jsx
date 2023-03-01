@@ -10,22 +10,26 @@ function Slider({ dataSlider }) {
   const [current, setCurrent] = useState(0);
 
   const nextSlide = () => {
-    setCurrent(current ===  pictures.length - 1 ? 0 : current + 1)
+    setCurrent(current === pictures.length - 1 ? 0 : current + 1)
   };
   const prevSlide = () => {
     setCurrent(current === 0 ? pictures.length - 1 : current - 1)
   };
 
+  //Condition si array pictures > 1 hide arrow + pagination
+
+
   return (
 
-    <div className="sliders">  
+    <div className="sliders">
       <div className="container__picture">
-      <div className='overlay'></div>
-        {pictures.map((pictures, index) =>
+        <div className='overlay'>
+        </div>
+        {pictures.map((pictures, picture) =>
           <div
-            key={index}
+            key={picture}
             className={
-              index === current
+              picture === current
                 ? "slider slide__picture-active"
                 : "slider"
             }
@@ -42,24 +46,27 @@ function Slider({ dataSlider }) {
         </span>
 
         <div className="pagination">
-          {pictures.map((_, index) => {
-            return (
-              <div
-                key={index}
-                className={index === current
-                  ? "pagination_number pagination_number-active"
-                  : "pagination_number"
-                }
-              >
-                <p className="number">{current}/{pictures.length - 1}</p> 
-              </div>
-            )
-          })}
+          {pictures.map((_, index) => {       
+              return (
+                <div
+                  key={index}
+                  className={index === current
+                    ? "pagination_number pagination_number-active"
+                    : "pagination_number"
+                  }
+                >
+                  <p className="number">{current}/{pictures.length - 1}</p>
+                </div>
+              )
+            }
+          )}
         </div>
       </div>
     </div>
   )
 }
+
+
 
 export default Slider;
 
