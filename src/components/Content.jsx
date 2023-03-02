@@ -6,24 +6,22 @@ function Content({ dataContent }) {
 
   return (
     <div className="locations">
-      <div className="title">
+      <div className='wrap'>
         <h1 className="title__text">
           {title}
         </h1>
-      </div>
-      <div className="location">
-        <h2 className="location__text">
+        <p className="location__text">
           {location}
-        </h2>
-      </div>
-      <div className="buttons">
-        {
-          tags.map((tags, index) =>
-            <button className="buttons__text"
-              key={index}>
-              {tags}
-            </button>)
-        }
+        </p>
+        <div className="buttons">
+          {
+            tags.map((tags, index) =>
+              <button className="buttons__text"
+                key={index}>
+                {tags}
+              </button>)
+          }
+        </div>
       </div>
     </div>
   );

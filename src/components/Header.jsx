@@ -11,7 +11,7 @@ function Header() {
       <nav className="header__nav">       
           <NavLink to="/" style ={({isActive})=>{
             return {textDecoration:isActive?"underline":""}}} className="header__links__style">
-            Acceuil
+            Accueil
           </NavLink>
           <NavLink to="/About" style ={({isActive})=>{
             return {textDecoration:isActive?"underline":""}}} className="header__links__style">

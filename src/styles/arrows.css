@@ -1,17 +1,21 @@
 .prev {
     position: absolute;
-    top: 150px;
     align-items: center;
     left: 15px;
     z-index: 1;
+    display: flex;
+    top: 0;
+    bottom: 0;
 }
 
 .next {
     position: absolute;
-    top: 150px;
     align-items: center;
     right: 15px;
     z-index: 1;
+    display: flex;
+    top: 0;
+    bottom: 0;
 }
 
 .arrows {
@@ -24,10 +28,4 @@
         width: 24px;
 
     }
-
-    .next,
-    .prev {
-        top: 110px;
-    }
-
 }

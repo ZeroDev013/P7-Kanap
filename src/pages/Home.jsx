@@ -1,21 +1,21 @@
 import Banner from '../components/Banner';
-import Gallery from '../components/Gallery';
 import Card from '../components/Card';
-
+import homeBanner from "../assets/images/banner.jpg";
 import logements from '../logements.json';
-
-import '../styles/body.css';
+import '../styles/home.css';
 
 function Home() {
 
   return (
     <>
-      <Banner>
-        <h1><span>Chez vous, &nbsp;</span><span> partout et ailleurs</span></h1>
+      <Banner srcImg={homeBanner}>
+        <h1 className='titleBanner'><span>Chez vous, &nbsp;</span><span> partout et ailleurs</span></h1>
       </Banner>
-      <Gallery>
-        {logements.map((logement) => <Card key = {logement.id} dataCard = {logement} />)}
-      </Gallery>
+      <div className="gallery">
+      {logements.map((logement) =>
+          <Card key={logement.id}
+            dataCard={logement} />)}
+        </div>
     </>
   );
 }

@@ -26,33 +26,29 @@ function FicheLogement() {
             <Stars rating={data.rating} maxScore="5" />
           </div>
         </div>
-      </div> 
-        <div className="dropdown__container">
-          <div className="dropdown__left">
-            <Dropdown
-              key={data.description}
-              title={"Description"} >
-              <>
-                {data.description}
-              </>
-            </Dropdown>
-          </div>
-          <div className="dropdown__right">
-            <Dropdown
-              key={data.equipements}
-              title={"Equipements"}  >
-              {data.equipments.map((equipements) =>
-                <li key = {equipements}>
-                  {equipements}
-                </li>
-              )}
-            </Dropdown>
-          </div>
+      </div>
+      <div className="dropdown__container">
+        <div className="dropdown__left">
+          <Dropdown
+            key={data.description}
+            title={"Description"} >
+            {data.description}
+          </Dropdown>
         </div>
-      
+        <div className="dropdown__right">
+          <Dropdown
+            key={data.equipements}
+            title={"Equipements"}  >
+            {data.equipments.map((equipements) =>
+              <li key={equipements}>
+                {equipements}
+              </li>
+            )}
+          </Dropdown>
+        </div>
+      </div>
     </>
   );
-
 }
 
 export default FicheLogement;
