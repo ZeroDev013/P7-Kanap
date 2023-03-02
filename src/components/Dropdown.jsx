@@ -19,8 +19,8 @@ function Dropdown({ title, equipements, content ,children }) {
         <div onClick={handleClick} className='dropdown'>
             <div className='dropdown_close'>
                 <div className='title'>
-                    <h3>{title}</h3>
-                    <h3>{equipements}</h3>
+                    <h3 className='title_content'>{title}</h3>
+                    <h3 className='title_content'>{equipements}</h3>
                 </div>
                 <div className={open ? 'vector open' : 'vector  closed'}>
                     <img src={vector} alt="vector" className="vector" />

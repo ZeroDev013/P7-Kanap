@@ -4,9 +4,9 @@
     align-items: center;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
 
     img.imageStars {
-        width: 24px;
+        width: 15px;
     }
 }

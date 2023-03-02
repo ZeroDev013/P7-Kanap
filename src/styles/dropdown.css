@@ -71,8 +71,9 @@
     background-color: #f6f6f6;
 }
 
-.h4 {
-    color: white;
+.title_content{
+    font-size: 18px;
+    color: #f6f6f6;
 }
 
 .title {
@@ -121,6 +122,9 @@ li {
 
     .dropdown__right {
         width: 100%;
+    }
+    .title_content {
+        font-size: 13px;
     }
 }
 

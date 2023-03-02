@@ -41,7 +41,7 @@
   }
 
 }
-@media (max-width: 578px) {
+@media (max-width: 768px) {
 
   .header__links__style {
     font-size: 12px;
@@ -51,15 +51,3 @@
 
 }
 
-@media (max-width: 385px) {
-
-  .header__nav {
-    gap: 20px;
-
-  }
-
-  a {
-    width: 50%;
-  }
-
-}
