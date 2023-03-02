@@ -8,7 +8,6 @@ function Slider({ dataSlider }) {
 
   const { pictures } = dataSlider;
   const [current, setCurrent] = useState(0);
-  /* const arrows = this.state.arrow; */
 
   const nextSlide = () => {
     setCurrent(current === pictures.length - 1 ? 0 : current + 1)
