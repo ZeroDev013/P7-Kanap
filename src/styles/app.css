@@ -8,18 +8,26 @@
     margin: 0;
 }
 
-
-#root {
+html, body {
     height: 100%;
 }
 
-.main {
+#root {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
     max-width: 1280px;
     margin-inline: auto;
+    flex: 1 1;
+    width: 100%;
 }
 
 h2, h3{
     color: #fff;
     font-size: 18px;
 }
+
 

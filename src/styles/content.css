@@ -51,8 +51,9 @@
     margin-block: 20px;
     flex-wrap: wrap;
 }
+
 @media (max-width: 1154px) {
-    .title__text{
+    .title__text {
         font-size: 22px;
     }
 }
@@ -76,10 +77,13 @@
         align-items: center;
     }
 
+    
+
     .buttons__text {
         font-size: 10px;
         line-height: 14px;
         border-radius: 5px;
+        padding: 5px 20px;
     }
 
     .title__text {
@@ -87,5 +91,3 @@
         line-height: 25px;
     }
 }
-
-

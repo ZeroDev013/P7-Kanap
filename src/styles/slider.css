@@ -1,22 +1,22 @@
 .sliders {
     position: relative;
-    height: 396px;
+    height: 410px;
     border-radius: 25px;
     overflow: hidden;
 }
 
-.sliders::after{
+.sliders::after {
     position: absolute;
     inset: 0;
     content: "";
-    background: linear-gradient(180deg, rgba(120,120,120,0.1) 0%,rgba(0,0,0,0.3)100%);
+    background: linear-gradient(180deg, rgba(120, 120, 120, 0.1) 0%, rgba(0, 0, 0, 0.3)100%);
 }
 
 .slider {
     position: absolute;
     inset: 0;
     opacity: 0;
-    
+
 }
 
 .slide__picture-active {
@@ -36,10 +36,11 @@
     border-radius: 25px;
 }
 
-.arrow{
+.arrow {
     display: visible;
 }
-.arrowHide{
+
+.arrowHide {
     display: none;
 }
 
@@ -49,7 +50,7 @@
 }
 
 .pagination {
-   
+
     bottom: 25px;
     position: absolute;
     font-weight: 500;
@@ -65,6 +66,12 @@
     .sliders {
         height: 273px;
     }
-    
 }
 
+@media (max-width: 768px) {
+
+    .pagination {
+        display: none;
+    }
+
+}

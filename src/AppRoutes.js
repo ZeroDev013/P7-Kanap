@@ -9,7 +9,7 @@ import Error from './pages/Error';
 function AppRoutes (){
     return(
 <Routes>
-    <Route exact path="/" element={<Home />} />
+    <Route path="/" element={<Home />} />
     <Route path="/about" element={<About />} />
     <Route path="/logements/:id" element={<FicheLogement />} />
     <Route path="*" element={<Error />} />
