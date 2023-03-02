@@ -35,7 +35,7 @@
 .buttons__text {
     height: 25px;
     background-color: #FF6060;
-    border-radius: 5px;
+    border-radius: 10px;
     color: white;
     border-style: none;
     display: flex;
@@ -79,6 +79,7 @@
     .buttons__text {
         font-size: 10px;
         line-height: 14px;
+        border-radius: 5px;
     }
 
     .title__text {
