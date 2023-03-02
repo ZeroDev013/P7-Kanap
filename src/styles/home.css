@@ -24,11 +24,16 @@
     flex-wrap: wrap;
 }
 
+.homeBanner {
+    height: 223px;
+}
+
 main {
-   max-width: 1280px;
-    margin-inline:auto;
+    max-width: 1280px;
+    margin-inline: auto;
     padding: 20px;
 }
+
 
 @media (max-width: 991px) {
 
@@ -36,6 +41,7 @@ main {
         font-size: 38px;
     }
 }
+
 @media (max-width: 768px) {
     .gallery {
         display: flex;
@@ -46,5 +52,15 @@ main {
         padding: 20px 0;
         gap: 20px;
     }
-}
 
+    .titleBanner {
+        font-size: 24px;
+        font-size: 24px;
+        justify-content: flex-start;
+        padding: 20px;
+    }
+
+    .homeBanner {
+        height: 111px;
+    }
+}

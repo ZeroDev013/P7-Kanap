@@ -8,14 +8,16 @@ function Home() {
 
   return (
     <>
-      <Banner srcImg={homeBanner}>
-        <h1 className='titleBanner'><span>Chez vous, &nbsp;</span><span> partout et ailleurs</span></h1>
-      </Banner>
+      <div className="homeBanner">
+        <Banner srcImg={homeBanner} >
+          <h1 className='titleBanner'><span>Chez vous, &nbsp;</span><span> partout et ailleurs</span></h1>
+        </Banner>
+      </div>
       <div className="gallery">
-      {logements.map((logement) =>
+        {logements.map((logement) =>
           <Card key={logement.id}
             dataCard={logement} />)}
-        </div>
+      </div>
     </>
   );
 }
