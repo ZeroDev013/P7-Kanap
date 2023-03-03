@@ -40,7 +40,6 @@ function Slider({ dataSlider }) {
           <span className="next" onClick={nextSlide}>
             <img src={arrowRight} alt="arrowRight" className='arrows' />
           </span>
-
         </>
       }
       <div className="pagination">
@@ -49,8 +48,6 @@ function Slider({ dataSlider }) {
     </div>
   )
 }
-
-
 
 export default Slider;
 

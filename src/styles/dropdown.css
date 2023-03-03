@@ -71,6 +71,7 @@
     display: block;
     margin: 0;
     background-color: #f6f6f6;
+    border-radius: 0;
 }
 
 .title_content{
