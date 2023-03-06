@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./styles/app.css";
 
-//Créer la structure de la page en important les routes de AppRoutes
+//Insère les éléments communs a toutes les pages
 function App() {
   return (
     <>

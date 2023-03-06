@@ -3,7 +3,6 @@ import '../styles/card.css';
 
 function Card({ props }) {
 
-    //récupère seulement les elements à afficher du logement
     const { id, title, cover } = props;
     const navigate = useNavigate();
 
