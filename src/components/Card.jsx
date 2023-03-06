@@ -1,10 +1,10 @@
 import { useNavigate } from 'react-router-dom';
 import '../styles/card.css';
 
-function Card({ dataCard }) {
+function Card({ props }) {
 
     //récupère seulement les elements à afficher du logement
-    const { id, title, cover } = dataCard;
+    const { id, title, cover } = props;
     const navigate = useNavigate();
 
     const navigateToFiche = () => {

@@ -1,8 +1,8 @@
 import '../styles/host.css';
 
-function Content({ dataContent }) {
+function Content({ props }) {
 
-  const { title, location, tags } = dataContent;
+  const { title, location, tags } = props;
 
   return (
     <div className="locations">

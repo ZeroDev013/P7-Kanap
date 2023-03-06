@@ -1,13 +1,13 @@
 import '../styles/host.css';
 
-function Host({ dataHost }) {
+function Host({ props }) {
 
     return (
         <>
             <div className="hostProfile">
-                <p className="host_name">{dataHost.host.name}</p>
+                <p className="host_name">{props.host.name}</p>
                 <div className="host_picture">
-                    <img src={dataHost.host.picture} alt="pictureProfil" className='host__img' />
+                    <img src={props.host.picture} alt="pictureProfil" className='host__img' />
                 </div>
             </div>
         </>

@@ -4,9 +4,9 @@ import arrowRight from "../assets/images/arrowRight.svg";
 import '../styles/arrows.css'
 import '../styles/slider.css'
 
-function Slider({ dataSlider }) {
+function Slider({ props }) {
 
-  const { pictures } = dataSlider;
+  const { pictures } = props;
   const [current, setCurrent] = useState(0);
 
   const nextSlide = () => {

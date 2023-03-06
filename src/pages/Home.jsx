@@ -16,7 +16,7 @@ function Home() {
       <div className="gallery">
         {logements.map((logement) =>
           <Card key={logement.id}
-            dataCard={logement} />)}
+            props={logement} />)}
       </div>
     </>
   );

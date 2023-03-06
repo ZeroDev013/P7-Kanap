@@ -17,11 +17,11 @@ function FicheLogement() {
 
   return (
     <>
-      <Slider dataSlider={data} />
+      <Slider props={data} />
       <div className="hosting">
-        <Content dataContent={data} />
+        <Content props={data} />
         <div className="host">
-          <Host dataHost={data} />
+          <Host props={data} />
           <div className="stars">
             <Stars rating={data.rating} maxScore="5" />
           </div>
